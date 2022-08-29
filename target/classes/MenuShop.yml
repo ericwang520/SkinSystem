@@ -1,0 +1,25 @@
+# Special Material
+# player's_head (該玩家的頭顱)
+#
+
+# Special Placeholder
+# $player_id$ (該玩家的 ID)
+# $player_uuid$ (該玩家的 UUID)
+# $skin_all_amount_repeat$ (造型總數)
+# $skin_all_amount_notRepeat$ (不重複造型總數)
+# $skin_helmet_amount$ (helmet 造型總數)
+# $skin_chestPlate_amount$ (chestPlate 造型總數)
+# $skin_leggings_amount$ (Leggings 造型總數)
+# $skin_itemMainHand_amount$ (itemMainHand造型總數)
+# $skin_itemOffHand_amount$ (itemOffHand 造型總數)
+
+# Enchanting 附魔 會自動隱藏 Lore
+# displayLore 支援 PlaceHolderAPI (佔位符)
+
+# action
+# openMenu: <頁數名稱>
+# closeMenu: <true|false> (false 則不會執行)
+# sendMessage: <對玩家傳送訊息>
+# executeCommands: <指令> (可使用 Placeholder 及 PlaceHolderAPI)
+
+skinShop:

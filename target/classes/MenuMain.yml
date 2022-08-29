@@ -1,0 +1,62 @@
+# Special Material
+# player's_head (該玩家的頭顱)
+#
+
+# Special Placeholder
+# $player_id$ (該玩家的 ID)
+# $player_uuid$ (該玩家的 UUID)
+# $skin_all_amount_repeat$ (造型總數)
+# $skin_all_amount_notRepeat$ (不重複造型總數)
+# $skin_helmet_amount$ (helmet 造型總數)
+# $skin_chestPlate_amount$ (chestPlate 造型總數)
+# $skin_leggings_amount$ (Leggings 造型總數)
+# $skin_itemMainHand_amount$ (itemMainHand造型總數)
+# $skin_itemOffHand_amount$ (itemOffHand 造型總數)
+
+# Enchanting 附魔 會自動隱藏 Lore
+# displayLore 支援 PlaceHolderAPI (佔位符)
+
+# action
+# openMenu: <頁數名稱>
+# closeMenu: <true|false> (false 則不會執行)
+# sendMessage: <對玩家傳送訊息>
+# executeCommands: <指令> (可使用 Placeholder 及 PlaceHolderAPI)
+
+skinMenu:
+  '0':
+    displayMaterial: player's_head
+    displayName: '&f造型資訊'
+    displayLore:
+      - '您的ID: %player_id%'
+      - ''
+      - '&8-----------------'
+      - '&7我的造型統計:'
+      - '&8造型總數: $skin_all_amount$'
+      - '&8不重複造型總數: $skin_all_amount_notRepeat$'
+    enchanting: false
+    customModelData: 1
+  '3':
+    displayMaterial: leather_chestplate
+    displayName: '&f我的衣櫃 &8(您正在此頁)'
+    enchanting: true
+  '4':
+    displayMaterial: chest
+    displayName: '&f造型商城'
+    enchanting: true
+    action:
+      openMenu: skinShop
+      sendMessage: '&7[&6系統&7] &f正在為您開啟造型商城。'
+  '5':
+    displayMaterial: armor_stand
+    displayName: '&f預覽造型'
+    enchanting: true
+    action:
+      openMenu: skinShowCase
+      sendMessage: '&7[&6系統&7] &f正在為您開啟預覽造型。'
+  '8':
+    displayMaterial: structure_void
+    displayName: '&f關閉介面'
+    enchanting: true
+    action:
+      closeMenu: true
+      sendMessage: '&7[&6系統&7] &a成功為您關閉造型介面。'
